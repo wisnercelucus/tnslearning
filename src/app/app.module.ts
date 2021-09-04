@@ -1,15 +1,19 @@
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core'
-import { NativeScriptModule } from '@nativescript/angular'
-
-import { AppRoutingModule } from './app-routing.module'
-import { AppComponent } from './app.component'
-import { ItemsComponent } from './item/items.component'
-import { ItemDetailComponent } from './item/item-detail.component'
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { NativeScriptFormsModule, NativeScriptModule } from '@nativescript/angular';
+import { AppComponent } from './app.component';
+import { CurrentChallengeComponent } from './challenges/current-challenge/current-challenge.component';
+import { StackComponent} from './layouts/stack/stack.component';
+import { FlexBoxComponent } from './layouts/flexbox/flexbox.component';
 
 @NgModule({
   bootstrap: [AppComponent],
-  imports: [NativeScriptModule, AppRoutingModule],
-  declarations: [AppComponent, ItemsComponent, ItemDetailComponent],
+  imports: [NativeScriptModule, NativeScriptFormsModule],
+  declarations: [
+    AppComponent,
+    CurrentChallengeComponent,
+    StackComponent,
+    FlexBoxComponent
+  ],
   providers: [],
   schemas: [NO_ERRORS_SCHEMA],
 })
