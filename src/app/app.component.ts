@@ -5,4 +5,9 @@ import { Component } from '@angular/core'
   templateUrl: './app.component.html',
   styleUrls:["./app.component.css"]
 })
-export class AppComponent {}
+export class AppComponent {
+  currentChallenges:string[] = [];
+  onChallenEdit($event:any){
+    this.currentChallenges.push($event);
+  }
+}

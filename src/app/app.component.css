@@ -1,3 +1,10 @@
 StackLayout{
     padding-top: 32;
 }
+FlexboxLayout{
+    padding-top: 32;
+}
+
+GridLayout{
+    padding-top: 32;
+}

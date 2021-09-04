@@ -1,4 +1,5 @@
-import { Component } from "@angular/core"
+import { Component, Input } from "@angular/core"
+import { ItemEventData } from "@nativescript/core";
 
 @Component({
   selector:"ns-current-challenge",
@@ -7,12 +8,11 @@ import { Component } from "@angular/core"
   moduleId:module.id
 })
 export class CurrentChallengeComponent{
-  challengeTitle:string;
-  currentChallenge:string;
+  @Input() challenges:string[] = [];
 
   constructor(){}
 
-  onSetChallenge(){
-    this.currentChallenge = this.challengeTitle;
+  onItemTap($event:ItemEventData){
+
   }
 }

@@ -4,13 +4,14 @@ import { AppComponent } from './app.component';
 import { CurrentChallengeComponent } from './challenges/current-challenge/current-challenge.component';
 import { StackComponent} from './layouts/stack/stack.component';
 import { FlexBoxComponent } from './layouts/flexbox/flexbox.component';
-
+import { ChallengeEditComponent} from './challenges/challenge-edit/challenge-edit.component';
 @NgModule({
   bootstrap: [AppComponent],
   imports: [NativeScriptModule, NativeScriptFormsModule],
   declarations: [
     AppComponent,
     CurrentChallengeComponent,
+    ChallengeEditComponent,
     StackComponent,
     FlexBoxComponent
   ],
